@@ -12,13 +12,14 @@
 }
 #hero_img{
     background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.12), rgba(81, 99, 177, 0.73)), url(./heroimage_files/heroimage.jpg);
+    background-attachment: fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 90%;
 }
 nav ul {
    list-style: none;
@@ -33,14 +34,16 @@ nav ul {
 nav ul li{
     display: inline;
     padding: 3px;
-    transition: 1s ease-in all;
+    transition: 300ms ease-in all;
 }
 nav ul li:hover{
-    background-color:#777777;
+    background-color:#ebeaea;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 3px;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #777777;
 }
 nav ul li a{
     text-decoration: none;
