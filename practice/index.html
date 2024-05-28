@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend class</title>
+    <link rel="shortcut icon" href="./fufu.jpeg" type="image/x-icon">
+</head>
+
+<body>
+    <section>
+        <h1>T-Shirt Sign Up</h1>
+        <p>Enter your name and size to sign up for a T-Shirt.</p>
+        <hr>
+        <div>
+            <p><strong>aminubabafatima8@gmail.com <a href="#">Switch account</a></strong></p>
+            <span>💌Not shared</span>
+            <span>☁️Draft saved</span>
+        </div>
+        <hr>
+    </section>
+    <section>
+        <h3>Name <sup>*</sup></h3>
+        <input type="text" name="name" id="name" placeholder="Your answer">
+    </section>
+
+    <section>
+        <h3>Shirt size</h3>
+        <input type="radio" name="size" value="XS">
+        <input type="radio" name="size" value="S">
+        <input type="radio" name="size" value="M">
+        <input type="radio" name="size" value="L">
+        <input type="radio" name="size" value="XL">
+        <button>Clear selection</button>
+    </section>
+    <section>
+        <h3>T-Shirt Preview</h3>
+        <img src="./Untitled.png" alt="dress">
+    </section>
+    <section>
+        <button>Submit</button>
+        <button>Clear form</button>
+    </section>
+    <section>
+        <p>Never submit passwords through Google Forms.</p>
+        <p>This content is neither created nor endorsed by Google. <a href="'">Report Abuse</a> - <a href="\">Terms of Service</a> -
+            <a href="\">Privacy Policy</a></p>
+            <p><span>Google</span> Forms</p>
+    </section>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .calc {
+        background-color: rgb(106, 68, 68);
+        padding: 30px;
+      }
+
+      .calc  {
+        margin: 5px;
+        color: tomato;
+        display: flex;
+        /* flex-direction: column; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" align="center">
+      <form name="forms">
+        <h1>Calculator Project</h1>
+        <div class="calc">
+          <input
+            type="text"
+            id="answer"
+            name="screen"
+            placeholder="0"
+          /><br /><br />
+          <input type="button" value="7" onclick="forms.screen.value+='7'" />
+          <input type="button" value="8" onclick="forms.screen.value+='8'" />
+          <input type="button" value="9" onclick="forms.screen.value+='9'" />
+          <input type="button" value="." onclick="forms.screen.value+='.'" />
+          <input
+            type="button"
+            value="C"
+            onclick="forms.screen.value=''"
+          /><br /><br />
+
+          <input type="button" value="4" onclick="forms.screen.value+='4'" />
+          <input type="button" value="5" onclick="forms.screen.value+='5'" />
+          <input type="button" value="6" onclick="forms.screen.value+='6'" />
+          <input type="button" value="+" onclick="forms.screen.value+='+'" />
+          <input type="button" value="-" onclick="forms.screen.value+='-'" />
+          <br /><br />
+
+          <input type="button" value="1" onclick="forms.screen.value+='1'" />
+          <input type="button" value="2" onclick="forms.screen.value+='2'" />
+          <input type="button" value="3" onclick="forms.screen.value+='3'" />
+          <input type="button" value="" onclick="forms.screen.value+=''" />
+          <input type="button" value="/" onclick="forms.screen.value+='/'" />
+          <br /><br />
+
+          <input type="button" value="0" onclick="forms.screen.value+='1'" />
+          <input type="button" value="00" onclick="forms.screen.value+='2'" />
+          <input type="button" value="000" onclick="forms.screen.value+='3'" />
+          <input type="button" value="%" onclick="forms.screen.value+='%'" />
+          <input
+            type="button"
+            value="="
+            onclick="forms.screen.value=eval(forms.screen.value)"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
